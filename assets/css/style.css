@@ -11,14 +11,14 @@
 }
 
 body{
-    margin: auto;
+    
     font-size: 15px;
     background-color: aliceblue;
     font-family: 'Outfit', sans-serif;
 }
 
 .container{
-    width: 600px;
+    width: 500px;
     display: flex;
     flex-direction: row;
     margin: 10% auto;
@@ -32,24 +32,23 @@ body{
 
 .card_inicial{
     width: 100%;
-    padding: 32px;
+    margin-top: 1.5rem;
+    /* padding: 25px; */
+
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
     
 }
 
-<<<<<<< HEAD
-.img-card img{
-=======
-.img-card{
-
-    background-image: url(assets/images/image-qr-code.png);
->>>>>>> 9732034fda5897e4296115922ee329c854170c74
+.img-card .img {
     width: 100%;
     height: 450px;
     border-radius: 1rem;
 }
+
 
 .description{
     width: 100%;
@@ -85,23 +84,47 @@ p{
 }
 
 
-@media screen and (max-width: 374px) {
-    .container{
-        widows: 300px;
-    }
-    .img-card{
-        widows: 90px;
-    }
-    .text-description{
-       
-    }
-    p{
+@media(max-width: 374px) {
+    body{
+        width: 350px;
         
+    }
+    .container{
+        width: 80%;
+        background-color: hsl(0, 0%, 100%);
+        padding: 0 1rem 0 1rem;
+    }
+    .card_inicial{
+    
+        padding: 0;
+    }
+    .img-card .img{
+        height: 300px;
 
+    }
+    /* .description{
+        ta aqui por boas praticas, porem nao temos nada para mudar
+    } */
+    .text-description{
+        padding: 0;
+        gap: 0;
+        
+        
+    }
+
+    h1{
+        
+        width: 250px;
+        font-size: 22px;
+        margin: 0;
+    }
+
+    p{
+        width: 15rem; /*250px*/
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 9732034fda5897e4296115922ee329c854170c74
