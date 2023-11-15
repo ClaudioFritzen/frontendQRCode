@@ -39,16 +39,10 @@ body{
     
 }
 
-.img-card{
-
-    background-image: url(/assets/images/image-qr-code.png);
+.img-card img{
     width: 100%;
     height: 450px;
-    background-size: cover;
-    background-position: center;
     border-radius: 1rem;
-    
-
 }
 
 .description{
@@ -87,11 +81,18 @@ p{
 
 @media screen and (max-width: 374px) {
     .container{
-        width: 374px;
+        widows: 300px;
     }
     .img-card{
-        height: 374px;
-        width: 374px;
+        widows: 90px;
+    }
+    .text-description{
+       
+    }
+    p{
+        
+
     }
     
 }
+
